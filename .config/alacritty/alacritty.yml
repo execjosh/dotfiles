@@ -1,0 +1,97 @@
+bell:
+  animation: EaseOutExpo
+  duration: 150
+  color: '0xFFFFFF'
+
+colors:
+  primary:
+    background: '#000000'
+    foreground: '#c7c7c7'
+  normal:
+    black: '#000000'
+    red: '#c91b00'
+    green: '#00c200'
+    yellow: '#c7c400'
+    blue: '#1c45fd'
+    magenta: '#ca30c7'
+    cyan: '#00c5c7'
+    white: '#c7c7c7'
+  bright:
+    black: '#686767'
+    red: '#ff6d67'
+    green: '#5ff967'
+    yellow: '#fffb67'
+    blue: '#8080ff'
+    magenta: '#ff76ff'
+    cyan: '#60fdff'
+    white: '#ffffff'
+
+  cursor:
+    text: CellBackground
+    cursor: CellForeground
+  vi_mode_cursor:
+    text: CellBackground
+    cursor: CellForeground
+  search:
+    matches:
+      foreground: '#000000'
+      background: '#FFFFFF'
+    focus_match:
+      foreground: CellBackground
+      background: CellForeground
+    bar:
+      foreground: '#1D1F21'
+      background: '#C5C8C6'
+  selection:
+    text: CellBackground
+    background: CellForeground
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+draw_bold_text_with_bright_colors: true
+
+env:
+  TERM: xterm-256color
+
+font:
+  normal:
+    family: Monaco
+    style: Regular
+  bold:
+    family: Monaco
+    style: Bold
+  italic:
+    family: Monaco
+    style: Italic
+  bold_italic:
+    family: Monaco
+    style: Bold Italic
+  size: 20
+  use_thin_strokes: true
+
+live_config_reload: true
+
+hints:
+  enabled:
+   - regex: "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
+             [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
+     action: Copy
+
+scrolling:
+  history: 100000
+  multiplier: 0
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+
+window:
+  decorations: full
+  dynamic_title: true
+  opacity: 1.0
+  padding:
+    x: 5
+    y: 5
+  startup_mode: Windowed
