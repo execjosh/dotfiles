@@ -1,0 +1,51 @@
+[alias]
+  ap = add -p
+  br = branch
+  co = checkout
+  ci = commit
+  df = diff
+  dfc = diff --cached
+  fap = fetch --all --prune
+  lg = log --find-copies --graph --abbrev --relative-date --topo-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset'
+  lga = log --find-copies --graph --abbrev --relative-date --topo-order --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --all
+  mf = merge --ff-only
+  mnf = merge --no-ff
+  mt = mergetool -t vimdiff -y
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbi = rebase -i
+  sb = show-branch --topo-order --sha1-name
+  st = status -b -s -uno
+  stu = status -b -s -uall
+  stat = show --stat --pretty=fuller
+  statc = diff --cached --stat --pretty=fuller
+  tags = tag -ln
+[am]
+  keepcr = true
+[branch]
+  autosetupmerge = always
+[color]
+  ui = auto
+[commit]
+  verbose = true
+  gpgsign = true
+[core]
+  autocrlf = false
+  editor = vi
+  excludesfile = ~/.gitignore
+  quotepath = false
+[gui]
+  encoding = utf-8
+[include]
+  path = ~/.gitconfig.local
+[init]
+  defaultBranch = main
+[mergetool]
+  keepBackup = false
+  keepTemporaries = false
+[push]
+  default = simple
+[url "ssh://github/"]
+  pushInsteadOf = github:
+[url "ssh://github/"]
+  insteadOf = https://github.com/
