@@ -25,6 +25,9 @@ colors:
     magenta: '#ff76ff'
     cyan: '#60fdff'
     white: '#ffffff'
+  footer_bar:
+    foreground: '#1D1F21'
+    background: '#C5C8C6'
 
   cursor:
     text: CellBackground
@@ -39,9 +42,6 @@ colors:
     focus_match:
       foreground: CellBackground
       background: CellForeground
-    bar:
-      foreground: '#1D1F21'
-      background: '#C5C8C6'
   selection:
     text: CellBackground
     background: CellForeground
@@ -69,7 +69,6 @@ font:
     family: Monaco
     style: Bold Italic
   size: 20
-  use_thin_strokes: true
 
 live_config_reload: true
 
@@ -91,6 +90,7 @@ window:
   decorations: full
   dynamic_title: true
   opacity: 1.0
+  option_as_alt: OnlyLeft
   padding:
     x: 5
     y: 5
