@@ -14,6 +14,9 @@ fi
 alias ll='ls -l'
 alias la='ll -A'
 alias fgrep='grep -F --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
 
 autoload -Uz compinit && compinit
 
