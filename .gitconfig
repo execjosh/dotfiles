@@ -11,6 +11,8 @@
   mf = merge --ff-only
   mnf = merge --no-ff
   mt = mergetool -t vimdiff -y
+  pf = push --force-with-lease
+  rb = rebase
   rba = rebase --abort
   rbc = rebase --continue
   rbi = rebase -i
@@ -22,6 +24,8 @@
   tags = tag -ln
 [am]
   keepcr = true
+[blame]
+  ignoreRevsFile = .git-blame-ignore-revs
 [branch]
   autosetupmerge = always
 [color]
@@ -34,6 +38,8 @@
   editor = vi
   excludesfile = ~/.gitignore
   quotepath = false
+[diff]
+  renames = true
 [gui]
   encoding = utf-8
 [include]
@@ -45,6 +51,8 @@
   keepTemporaries = false
 [push]
   default = simple
+[rerere]
+  enabled = true
 [url "ssh://github/"]
   pushInsteadOf = github:
 [url "ssh://github/"]
