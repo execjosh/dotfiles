@@ -1,0 +1,9 @@
+*.code-workspace
+.code-workspace
+.swp
+.vscode
+
+# local env files
+.env*.local
+
+*.old
