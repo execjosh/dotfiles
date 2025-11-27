@@ -1,0 +1,107 @@
+[bell]
+animation = "EaseOutExpo"
+color = "0xFFFFFF"
+duration = 150
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[colors.bright]
+black = "#686767"
+blue = "#8080ff"
+cyan = "#60fdff"
+green = "#5ff967"
+magenta = "#ff76ff"
+red = "#ff6d67"
+white = "#ffffff"
+yellow = "#fffb67"
+
+[colors.cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[colors.footer_bar]
+background = "#C5C8C6"
+foreground = "#1D1F21"
+
+[colors.normal]
+black = "#000000"
+blue = "#1c45fd"
+cyan = "#00c5c7"
+green = "#00c200"
+magenta = "#ca30c7"
+red = "#c91b00"
+white = "#c7c7c7"
+yellow = "#c7c400"
+
+[colors.primary]
+background = "#000000"
+foreground = "#c7c7c7"
+
+[colors.search.focused_match]
+background = "CellForeground"
+foreground = "CellBackground"
+
+[colors.search.matches]
+background = "#FFFFFF"
+foreground = "#000000"
+
+[colors.selection]
+background = "CellForeground"
+text = "CellBackground"
+
+[colors.vi_mode_cursor]
+cursor = "CellForeground"
+text = "CellBackground"
+
+[cursor]
+style = "Block"
+unfocused_hollow = true
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 20
+
+[font.bold]
+family = "Monaco"
+style = "Bold"
+
+[font.bold_italic]
+family = "Monaco"
+style = "Bold Italic"
+
+[font.italic]
+family = "Monaco"
+style = "Italic"
+
+[font.normal]
+family = "Monaco"
+style = "Regular"
+
+[[hints.enabled]]
+action = "Copy"
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[scrolling]
+history = 100000
+multiplier = 0
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 1.0
+option_as_alt = "OnlyLeft"
+startup_mode = "Windowed"
+
+[window.padding]
+x = 5
+y = 5
+
+[general]
+live_config_reload = true
