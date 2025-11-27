@@ -6,6 +6,8 @@ PROMPT='%F{blue}%1~%f %(!.#.❯) '
 CASE_SENSITIVE='true'
 DISABLE_MAGIC_FUNCTIONS='true'
 
+alias chmod='chmod -v'
+alias fgrep='grep -F --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 if [ -x "$(command -v gls)" ]; then
 	alias ls='gls -bFGkhv --group-directories-first --color=always'
 else
@@ -13,7 +15,6 @@ else
 fi
 alias ll='ls -l'
 alias la='ll -A'
-alias fgrep='grep -F --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 
 autoload -Uz compinit && compinit
 
